@@ -41,6 +41,7 @@
     "energy": "Energia e Recursos",
     "etfFlows": "Rastreador ETF BTC",
     "economic": "Indicadores Econômicos",
+    "tradePolicy": "Política Comercial",
     "macroSignals": "Radar de Mercado",
     "commodities": "Mercadorias",
     "monitors": "Meus monitores",
@@ -65,10 +66,10 @@
   },
   "modals": {
     "search": {
-      "placeholder": "Pesquise notícias, pipelines, bases, mercados...",
-      "hint": "Notícias • Pipelines • Bases • Cabos • Datacenters • Mercados",
+      "placeholder": "Pesquisar ou digitar um comando...",
+      "hint": "Pesquisa • Países • Camadas • Painéis • Navegação • Configurações",
       "recent": "Pesquisas recentes",
-      "empty": "Pesquise em todas as fontes de dados",
+      "empty": "Pesquisar dados ou executar comandos",
       "noResults": "No results found",
       "navigate": "navegar",
       "select": "selecione",
@@ -95,10 +96,10 @@
         "techhq": "Sede de tecnologia",
         "accelerator": "Aceleradora"
       },
-      "placeholderTech": "Pesquise empresas, laboratórios de IA, startups, eventos...",
-      "hintTech": "Sedes • Empresas • Laboratórios de IA • Startups • Aceleradoras • Eventos",
-      "placeholderFinance": "Pesquise bolsas, mercados, bancos centrais...",
-      "hintFinance": "Bolsas • Centros Financeiros • Bancos Centrais • Mercadorias"
+      "placeholderTech": "Pesquisar ou digitar um comando...",
+      "hintTech": "Pesquisa • Empresas • Laboratórios IA • Camadas • Navegação • Configurações",
+      "placeholderFinance": "Pesquisar ou digitar um comando...",
+      "hintFinance": "Pesquisa • Bolsas • Mercados • Camadas • Navegação • Configurações"
     },
     "signal": {
       "source": "Source",
@@ -411,7 +412,8 @@
         "financialCenters": "Centros Financeiros",
         "centralBanks": "Bancos Centrais",
         "commodityHubs": "Centros de commodities",
-        "gulfInvestments": "Investimentos do CCG"
+        "gulfInvestments": "Investimentos do CCG",
+        "tradeRoutes": "Rotas Comerciais"
       },
       "layersTitle": "Camadas",
       "layerGuide": "Guia de camadas",
@@ -503,7 +505,8 @@
           "transportShipping": "Navios, gargalos, 61 portos estratégicos",
           "transportDelays": "Atrasos em aeroportos e paradas em terra (FAA)",
           "naturalEventsFull": "Terremotos (USGS) + tempestades, incêndios, vulcões, inundações (NASA EONET)",
-          "waterwaysLabels": "Rótulos de gargalos estratégicos"
+          "waterwaysLabels": "Rótulos de gargalos estratégicos",
+          "tradeRoutes": "Principais rotas marítimas globais conectando portos através de pontos estratégicos"
         },
         "notes": {
           "timeAffects": "Afeta: terremotos, clima, protestos, interrupções"
@@ -766,7 +769,37 @@
       "noSpending": "Nenhum prêmio governamental recente",
       "awards": "prêmios",
       "noData": "Nenhum dado econômico disponível",
-      "noOilData": "Dados de petróleo não disponíveis"
+      "noOilData": "Dados de petróleo não disponíveis",
+      "centralBanks": "Central Banks",
+      "noBisData": "BIS data temporarily unavailable - will retry",
+      "policyRate": "Policy Rate",
+      "exchangeRate": "Exchange Rate",
+      "creditToGdp": "Credit / GDP",
+      "realEer": "Real EER",
+      "change": "Change",
+      "cut": "cut",
+      "hike": "hike",
+      "hold": "hold"
+    },
+    "tradePolicy": {
+      "restrictions": "Restrições",
+      "tariffs": "Tarifas",
+      "flows": "Fluxos Comerciais",
+      "barriers": "Barreiras",
+      "noRestrictions": "Sem restrições comerciais ativas",
+      "noTariffData": "Sem dados tarifários disponíveis",
+      "noFlowData": "Sem dados de fluxos comerciais disponíveis",
+      "noBarriers": "Nenhuma barreira comercial reportada",
+      "apiKeyMissing": "Chave API da OMC necessária — adicione nas Configurações",
+      "upstreamUnavailable": "Dados da OMC temporariamente indisponíveis — exibindo dados em cache",
+      "appliedRate": "Taxa Aplicada",
+      "boundRate": "Taxa Consolidada",
+      "exports": "Exportações",
+      "imports": "Importações",
+      "yoyChange": "Variação Anual",
+      "highTariff": "Alto",
+      "moderateTariff": "Moderado",
+      "lowTariff": "Baixo"
     },
     "satelliteFires": {
       "region": "Região",
@@ -1810,7 +1843,8 @@
     "panelCatCryptoDigital": "Cripto & Digital",
     "panelCatCentralBanks": "Bancos Centrais & Economia",
     "panelCatDeals": "Negócios & Institucional",
-    "panelCatGulfMena": "Golfo & MENA"
+    "panelCatGulfMena": "Golfo & MENA",
+    "panelCatTradePolicy": "Política Comercial"
   },
   "app": {
     "title": "World Monitor",

@@ -137,7 +137,8 @@
     "panelCatCryptoDigital": "Krypto & Digital",
     "panelCatCentralBanks": "Zentralbanken & Wirtschaft",
     "panelCatDeals": "Deals & Institutionell",
-    "panelCatGulfMena": "Golf & MENA"
+    "panelCatGulfMena": "Golf & MENA",
+    "panelCatTradePolicy": "Handelspolitik"
   },
   "panels": {
     "liveNews": "Live-Nachrichten",
@@ -165,6 +166,7 @@
     "polymarket": "Vorhersagen",
     "commodities": "Rohstoffe",
     "economic": "Wirtschaftsindikatoren",
+    "tradePolicy": "Handelspolitik",
     "finance": "Finanzen",
     "tech": "Technologie",
     "crypto": "Krypto",
@@ -205,10 +207,10 @@
   },
   "modals": {
     "search": {
-      "placeholder": "Durchsuchen Sie Nachrichten, Pipelines, Stützpunkte, Märkte ...",
-      "hint": "Nachrichten • Pipelines • Stützpunkte • Kabel • Rechenzentren • Märkte",
+      "placeholder": "Suchen oder Befehl eingeben...",
+      "hint": "Suche • Länder • Ebenen • Panels • Navigation • Einstellungen",
       "recent": "Aktuelle Suchanfragen",
-      "empty": "Durchsuchen Sie alle Datenquellen",
+      "empty": "Daten durchsuchen oder Befehle ausführen",
       "noResults": "No results found",
       "navigate": "navigieren",
       "select": "wählen",
@@ -235,10 +237,10 @@
         "techhq": "Tech-Hauptquartier",
         "accelerator": "Beschleuniger"
       },
-      "placeholderTech": "Suchen Sie nach Unternehmen, KI-Laboren, Start-ups, Veranstaltungen ...",
-      "hintTech": "Hauptsitze • Unternehmen • KI-Labore • Startups • Beschleuniger • Veranstaltungen",
-      "placeholderFinance": "Suchen Sie nach Börsen, Märkten, Zentralbanken...",
-      "hintFinance": "Börsen • Finanzzentren • Zentralbanken • Rohstoffe"
+      "placeholderTech": "Suchen oder Befehl eingeben...",
+      "hintTech": "Suche • Unternehmen • KI-Labore • Ebenen • Navigation • Einstellungen",
+      "placeholderFinance": "Suchen oder Befehl eingeben...",
+      "hintFinance": "Suche • Börsen • Märkte • Ebenen • Navigation • Einstellungen"
     },
     "signal": {
       "title": "INTELLIGENZFINDEN",
@@ -523,7 +525,37 @@
       "noIndicatorData": "Noch keine Indikatordaten – FRED wird möglicherweise geladen",
       "noOilDataRetry": "Öldaten sind vorübergehend nicht verfügbar. Versuchen Sie es erneut",
       "vsPreviousWeek": "im Vergleich zur Vorwoche",
-      "in": "In"
+      "in": "In",
+      "centralBanks": "Central Banks",
+      "noBisData": "BIS data temporarily unavailable - will retry",
+      "policyRate": "Policy Rate",
+      "exchangeRate": "Exchange Rate",
+      "creditToGdp": "Credit / GDP",
+      "realEer": "Real EER",
+      "change": "Change",
+      "cut": "cut",
+      "hike": "hike",
+      "hold": "hold"
+    },
+    "tradePolicy": {
+      "restrictions": "Beschränkungen",
+      "tariffs": "Zölle",
+      "flows": "Handelsströme",
+      "barriers": "Handelsbarrieren",
+      "noRestrictions": "Keine aktiven Handelsbeschränkungen",
+      "noTariffData": "Keine Zolldaten verfügbar",
+      "noFlowData": "Keine Handelsstromdaten verfügbar",
+      "noBarriers": "Keine Handelsbarrieren gemeldet",
+      "apiKeyMissing": "WTO-API-Schlüssel erforderlich — in den Einstellungen hinzufügen",
+      "upstreamUnavailable": "WTO-Daten vorübergehend nicht verfügbar — zwischengespeicherte Daten werden angezeigt",
+      "appliedRate": "Angewandter Zollsatz",
+      "boundRate": "Gebundener Zollsatz",
+      "exports": "Exporte",
+      "imports": "Importe",
+      "yoyChange": "Veränderung zum Vorjahr",
+      "highTariff": "Hoch",
+      "moderateTariff": "Mittel",
+      "lowTariff": "Niedrig"
     },
     "gdelt": {
       "empty": "Keine aktuellen Artikel zu diesem Thema"
@@ -614,7 +646,8 @@
         "financialCenters": "Finanzzentren",
         "centralBanks": "Zentralbanken",
         "commodityHubs": "Rohstoffzentren",
-        "gulfInvestments": "GCC-Investitionen"
+        "gulfInvestments": "GCC-Investitionen",
+        "tradeRoutes": "Handelsrouten"
       },
       "layersTitle": "Schichten",
       "layerGuide": "Ebenenführer",
@@ -706,7 +739,8 @@
           "transportShipping": "Schiffe, Engpässe, 61 strategische Häfen",
           "transportDelays": "Verspätungen am Flughafen und Bodenstopps (FAA)",
           "naturalEventsFull": "Erdbeben (USGS) + Stürme, Brände, Vulkane, Überschwemmungen (NASA EONET)",
-          "waterwaysLabels": "Strategische Engpassmarkierungen"
+          "waterwaysLabels": "Strategische Engpassmarkierungen",
+          "tradeRoutes": "Wichtige globale Schifffahrtsrouten, die Häfen über strategische Engpässe verbinden"
         },
         "notes": {
           "timeAffects": "Betrifft: Erdbeben, Wetter, Proteste, Ausfälle"

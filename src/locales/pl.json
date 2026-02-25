@@ -137,7 +137,8 @@
     "panelCatCryptoDigital": "Krypto & Cyfrowe",
     "panelCatCentralBanks": "Banki Centralne & Gospodarka",
     "panelCatDeals": "Transakcje & Instytucjonalne",
-    "panelCatGulfMena": "Zatoka & MENA"
+    "panelCatGulfMena": "Zatoka & MENA",
+    "panelCatTradePolicy": "Polityka Handlowa"
   },
   "panels": {
     "liveNews": "Wiadomości na żywo",
@@ -165,6 +166,7 @@
     "polymarket": "Prognozy",
     "commodities": "Towary",
     "economic": "Wskaźniki ekonomiczne",
+    "tradePolicy": "Polityka Handlowa",
     "finance": "Finanse",
     "tech": "Technologia",
     "crypto": "Krypto",
@@ -205,10 +207,10 @@
   },
   "modals": {
     "search": {
-      "placeholder": "Szukaj aktualności, rurociągów, baz, rynków...",
-      "hint": "Aktualności • Rurociągi • Bazy • Kable • Centra danych • Rynki",
+      "placeholder": "Szukaj lub wpisz polecenie...",
+      "hint": "Szukaj • Kraje • Warstwy • Panele • Nawigacja • Ustawienia",
       "recent": "Ostatnie wyszukiwania",
-      "empty": "Przeszukuj wszystkie źródła danych",
+      "empty": "Szukaj danych lub uruchom polecenia",
       "noResults": "No results found",
       "navigate": "nawigować",
       "select": "wybierać",
@@ -235,10 +237,10 @@
         "techhq": "Siedziba technologiczna",
         "accelerator": "Akcelerator"
       },
-      "placeholderTech": "Wyszukaj firmy, laboratoria AI, startupy, wydarzenia...",
-      "hintTech": "Siedziby główne • Firmy • Laboratoria AI • Startupy • Akceleratory • Wydarzenia",
-      "placeholderFinance": "Przeszukaj giełdy, rynki, banki centralne...",
-      "hintFinance": "Giełdy • Centra finansowe • Banki centralne • Towary"
+      "placeholderTech": "Szukaj lub wpisz polecenie...",
+      "hintTech": "Szukaj • Firmy • Laboratoria AI • Warstwy • Nawigacja • Ustawienia",
+      "placeholderFinance": "Szukaj lub wpisz polecenie...",
+      "hintFinance": "Szukaj • Giełdy • Rynki • Warstwy • Nawigacja • Ustawienia"
     },
     "signal": {
       "title": "WYKONANIE INTELIGENCJI",
@@ -523,7 +525,37 @@
       "noIndicatorData": "Brak jeszcze danych wskaźników — FRED może się ładować",
       "noOilDataRetry": "Dane dotyczące oleju są chwilowo niedostępne — spróbujemy ponownie",
       "vsPreviousWeek": "w porównaniu z poprzednim tygodniem",
-      "in": "W"
+      "in": "W",
+      "centralBanks": "Central Banks",
+      "noBisData": "BIS data temporarily unavailable - will retry",
+      "policyRate": "Policy Rate",
+      "exchangeRate": "Exchange Rate",
+      "creditToGdp": "Credit / GDP",
+      "realEer": "Real EER",
+      "change": "Change",
+      "cut": "cut",
+      "hike": "hike",
+      "hold": "hold"
+    },
+    "tradePolicy": {
+      "restrictions": "Ograniczenia",
+      "tariffs": "Cła",
+      "flows": "Przepływy Handlowe",
+      "barriers": "Bariery",
+      "noRestrictions": "Brak aktywnych ograniczeń handlowych",
+      "noTariffData": "Brak dostępnych danych celnych",
+      "noFlowData": "Brak dostępnych danych o przepływach handlowych",
+      "noBarriers": "Nie zgłoszono barier handlowych",
+      "apiKeyMissing": "Wymagany klucz API WTO — dodaj go w Ustawieniach",
+      "upstreamUnavailable": "Dane WTO tymczasowo niedostępne — wyświetlanie danych z pamięci podręcznej",
+      "appliedRate": "Stawka Stosowana",
+      "boundRate": "Stawka Związana",
+      "exports": "Eksport",
+      "imports": "Import",
+      "yoyChange": "Zmiana Roczna",
+      "highTariff": "Wysokie",
+      "moderateTariff": "Umiarkowane",
+      "lowTariff": "Niskie"
     },
     "gdelt": {
       "empty": "Brak najnowszych artykułów na ten temat"
@@ -614,7 +646,8 @@
         "financialCenters": "Centra finansowe",
         "centralBanks": "Banki Centralne",
         "commodityHubs": "Centra towarowe",
-        "gulfInvestments": "Inwestycje GCC"
+        "gulfInvestments": "Inwestycje GCC",
+        "tradeRoutes": "Szlaki Handlowe"
       },
       "layersTitle": "Warstwy",
       "layerGuide": "Przewodnik po warstwach",
@@ -706,7 +739,8 @@
           "transportShipping": "Statki, wąskie gardła, 61 portów strategicznych",
           "transportDelays": "Opóźnienia na lotniskach i postoje naziemne (FAA)",
           "naturalEventsFull": "Trzęsienia ziemi (USGS) + burze, pożary, wulkany, powodzie (NASA EONET)",
-          "waterwaysLabels": "Strategiczne etykiety punktów kontrolnych"
+          "waterwaysLabels": "Strategiczne etykiety punktów kontrolnych",
+          "tradeRoutes": "Główne globalne szlaki żeglugowe łączące porty przez strategiczne wąskie gardła"
         },
         "notes": {
           "timeAffects": "Wpływ na: Trzęsienia ziemi, Pogoda, Protesty, Przestoje"

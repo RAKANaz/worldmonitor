@@ -137,7 +137,8 @@
     "panelCatCryptoDigital": "Tiền mã hóa & Kỹ thuật số",
     "panelCatCentralBanks": "Ngân hàng Trung ương & Kinh tế",
     "panelCatDeals": "Giao dịch & Tổ chức",
-    "panelCatGulfMena": "Vùng Vịnh & MENA"
+    "panelCatGulfMena": "Vùng Vịnh & MENA",
+    "panelCatTradePolicy": "Chính sách Thương mại"
   },
   "panels": {
     "liveNews": "Tin tức Trực tiếp",
@@ -166,6 +167,7 @@
     "polymarket": "Dự đoán",
     "commodities": "Hàng hóa",
     "economic": "Chỉ số Kinh tế",
+    "tradePolicy": "Chính sách Thương mại",
     "finance": "Tài chính",
     "tech": "Công nghệ",
     "crypto": "Tiền mã hóa",
@@ -205,14 +207,14 @@
   },
   "modals": {
     "search": {
-      "placeholder": "Tìm tin tức, đường ống, căn cứ, thị trường...",
-      "hint": "Tin tức • Đường ống • Căn cứ • Cáp ngầm • Trung tâm dữ liệu • Thị trường",
-      "placeholderTech": "Tìm công ty, phòng thí nghiệm AI, khởi nghiệp, sự kiện...",
-      "hintTech": "Trụ sở • Công ty • Phòng thí nghiệm AI • Khởi nghiệp • Vườn ươm • Sự kiện",
-      "placeholderFinance": "Tìm sàn giao dịch, thị trường, ngân hàng trung ương...",
-      "hintFinance": "Sàn giao dịch • Trung tâm Tài chính • Ngân hàng Trung ương • Hàng hóa",
+      "placeholder": "Tìm kiếm hoặc nhập lệnh...",
+      "hint": "Tìm kiếm • Quốc gia • Lớp • Bảng • Điều hướng • Cài đặt",
+      "placeholderTech": "Tìm kiếm hoặc nhập lệnh...",
+      "hintTech": "Tìm kiếm • Công ty • Phòng thí nghiệm AI • Lớp • Điều hướng • Cài đặt",
+      "placeholderFinance": "Tìm kiếm hoặc nhập lệnh...",
+      "hintFinance": "Tìm kiếm • Sàn giao dịch • Thị trường • Lớp • Điều hướng • Cài đặt",
       "recent": "Tìm kiếm Gần đây",
-      "empty": "Tìm kiếm trên tất cả nguồn dữ liệu",
+      "empty": "Tìm dữ liệu hoặc chạy lệnh",
       "noResults": "Không có kết quả",
       "navigate": "điều hướng",
       "select": "chọn",
@@ -523,7 +525,37 @@
       "noIndicatorData": "Chưa có dữ liệu chỉ số - FRED có thể đang tải",
       "noOilDataRetry": "Dữ liệu dầu mỏ tạm thời không khả dụng - sẽ thử lại",
       "vsPreviousWeek": "so với tuần trước",
-      "in": "trong"
+      "in": "trong",
+      "centralBanks": "Central Banks",
+      "noBisData": "BIS data temporarily unavailable - will retry",
+      "policyRate": "Policy Rate",
+      "exchangeRate": "Exchange Rate",
+      "creditToGdp": "Credit / GDP",
+      "realEer": "Real EER",
+      "change": "Change",
+      "cut": "cut",
+      "hike": "hike",
+      "hold": "hold"
+    },
+    "tradePolicy": {
+      "restrictions": "Hạn chế",
+      "tariffs": "Thuế quan",
+      "flows": "Dòng chảy Thương mại",
+      "barriers": "Rào cản",
+      "noRestrictions": "Không có hạn chế thương mại đang hoạt động",
+      "noTariffData": "Không có dữ liệu thuế quan",
+      "noFlowData": "Không có dữ liệu dòng chảy thương mại",
+      "noBarriers": "Không có rào cản thương mại được báo cáo",
+      "apiKeyMissing": "Cần khóa API WTO — thêm trong Cài đặt",
+      "upstreamUnavailable": "Dữ liệu WTO tạm thời không khả dụng — hiển thị dữ liệu đã lưu",
+      "appliedRate": "Thuế suất Áp dụng",
+      "boundRate": "Thuế suất Ràng buộc",
+      "exports": "Xuất khẩu",
+      "imports": "Nhập khẩu",
+      "yoyChange": "Thay đổi theo Năm",
+      "highTariff": "Cao",
+      "moderateTariff": "Trung bình",
+      "lowTariff": "Thấp"
     },
     "gdelt": {
       "empty": "Không có bài viết gần đây cho chủ đề này"
@@ -750,7 +782,8 @@
         "financialCenters": "Trung tâm Tài chính",
         "centralBanks": "Ngân hàng Trung ương",
         "commodityHubs": "Trung tâm Hàng hóa",
-        "gulfInvestments": "Đầu tư GCC"
+        "gulfInvestments": "Đầu tư GCC",
+        "tradeRoutes": "Tuyến Thương mại"
       },
       "tooltip": {
         "earthquake": "Động đất",
@@ -840,7 +873,8 @@
           "transportShipping": "Tàu, điểm nghẽn, 61 cảng chiến lược",
           "transportDelays": "Chậm trễ sân bay và dừng mặt đất (FAA)",
           "naturalEventsFull": "Động đất (USGS) + bão, cháy, núi lửa, lũ lụt (NASA EONET)",
-          "waterwaysLabels": "Nhãn điểm nghẽn chiến lược"
+          "waterwaysLabels": "Nhãn điểm nghẽn chiến lược",
+          "tradeRoutes": "Các tuyến vận tải biển chính toàn cầu kết nối các cảng qua các điểm chiến lược"
         },
         "notes": {
           "timeAffects": "Ảnh hưởng: Động đất, Thời tiết, Biểu tình, Gián đoạn"

@@ -137,7 +137,8 @@
     "panelCatCryptoDigital": "Κρύπτο & Ψηφιακά",
     "panelCatCentralBanks": "Κεντρικές Τράπεζες & Οικονομία",
     "panelCatDeals": "Συμφωνίες & Θεσμικά",
-    "panelCatGulfMena": "Κόλπος & ΜΕΝΑ"
+    "panelCatGulfMena": "Κόλπος & ΜΕΝΑ",
+    "panelCatTradePolicy": "Εμπορική Πολιτική"
   },
   "panels": {
     "liveNews": "Ζωντανές Ειδήσεις",
@@ -166,6 +167,7 @@
     "polymarket": "Προβλέψεις",
     "commodities": "Εμπορεύματα",
     "economic": "Οικονομικοί Δείκτες",
+    "tradePolicy": "Εμπορική Πολιτική",
     "finance": "Χρηματοοικονομικά",
     "tech": "Τεχνολογία",
     "crypto": "Crypto",
@@ -205,14 +207,14 @@
   },
   "modals": {
     "search": {
-      "placeholder": "Αναζήτηση ειδήσεων, αγωγών, βάσεων, αγορών...",
-      "hint": "Ειδήσεις • Αγωγοί • Βάσεις • Καλώδια • Κέντρα Δεδομένων • Αγορές",
-      "placeholderTech": "Αναζήτηση εταιρειών, AI labs, startups, εκδηλώσεων...",
-      "hintTech": "Έδρες • Εταιρείες • AI Labs • Startups • Accelerators • Εκδηλώσεις",
-      "placeholderFinance": "Αναζήτηση χρηματιστηρίων, αγορών, κεντρικών τραπεζών...",
-      "hintFinance": "Χρηματιστήρια • Χρηματοπιστωτικά Κέντρα • Κεντρικές Τράπεζες • Εμπορεύματα",
+      "placeholder": "Αναζήτηση ή πληκτρολογήστε εντολή...",
+      "hint": "Αναζήτηση • Χώρες • Επίπεδα • Πάνελ • Πλοήγηση • Ρυθμίσεις",
+      "placeholderTech": "Αναζήτηση ή πληκτρολογήστε εντολή...",
+      "hintTech": "Αναζήτηση • Εταιρείες • AI Labs • Επίπεδα • Πλοήγηση • Ρυθμίσεις",
+      "placeholderFinance": "Αναζήτηση ή πληκτρολογήστε εντολή...",
+      "hintFinance": "Αναζήτηση • Χρηματιστήρια • Αγορές • Επίπεδα • Πλοήγηση • Ρυθμίσεις",
       "recent": "Πρόσφατες Αναζητήσεις",
-      "empty": "Αναζήτηση σε όλες τις πηγές δεδομένων",
+      "empty": "Αναζήτηση δεδομένων ή εκτέλεση εντολών",
       "noResults": "Κανένα αποτέλεσμα",
       "navigate": "πλοήγηση",
       "select": "επιλογή",
@@ -551,7 +553,37 @@
       "fredKeyMissing": "Απαιτείται FRED API key — προσθέστε το στις Ρυθμίσεις για ενεργοποίηση οικονομικών δεικτών",
       "noOilDataRetry": "Δεδομένα πετρελαίου προσωρινά μη διαθέσιμα - θα γίνει επανάληψη",
       "vsPreviousWeek": "σε σχέση με την προηγούμενη εβδομάδα",
-      "in": "σε"
+      "in": "σε",
+      "centralBanks": "Central Banks",
+      "noBisData": "BIS data temporarily unavailable - will retry",
+      "policyRate": "Policy Rate",
+      "exchangeRate": "Exchange Rate",
+      "creditToGdp": "Credit / GDP",
+      "realEer": "Real EER",
+      "change": "Change",
+      "cut": "cut",
+      "hike": "hike",
+      "hold": "hold"
+    },
+    "tradePolicy": {
+      "restrictions": "Περιορισμοί",
+      "tariffs": "Δασμοί",
+      "flows": "Εμπορικές Ροές",
+      "barriers": "Εμπόδια",
+      "noRestrictions": "Δεν υπάρχουν ενεργοί εμπορικοί περιορισμοί",
+      "noTariffData": "Δεν υπάρχουν διαθέσιμα δεδομένα δασμών",
+      "noFlowData": "Δεν υπάρχουν διαθέσιμα δεδομένα εμπορικών ροών",
+      "noBarriers": "Δεν αναφέρθηκαν εμπορικά εμπόδια",
+      "apiKeyMissing": "Απαιτείται κλειδί WTO API — προσθέστε το στις Ρυθμίσεις",
+      "upstreamUnavailable": "Δεδομένα WTO προσωρινά μη διαθέσιμα — εμφάνιση αποθηκευμένων δεδομένων",
+      "appliedRate": "Εφαρμοζόμενος Συντελεστής",
+      "boundRate": "Δεσμευμένος Συντελεστής",
+      "exports": "Εξαγωγές",
+      "imports": "Εισαγωγές",
+      "yoyChange": "Ετήσια Μεταβολή",
+      "highTariff": "Υψηλό",
+      "moderateTariff": "Μέτριο",
+      "lowTariff": "Χαμηλό"
     },
     "gdelt": {
       "empty": "Δεν υπάρχουν πρόσφατα άρθρα για αυτό το θέμα"
@@ -778,7 +810,8 @@
         "financialCenters": "Χρηματοπιστωτικά Κέντρα",
         "centralBanks": "Κεντρικές Τράπεζες",
         "commodityHubs": "Κέντρα Εμπορευμάτων",
-        "gulfInvestments": "Επενδύσεις GCC"
+        "gulfInvestments": "Επενδύσεις GCC",
+        "tradeRoutes": "Εμπορικές Διαδρομές"
       },
       "tooltip": {
         "earthquake": "Σεισμός",
@@ -879,7 +912,8 @@
           "techCyberThreats": "Κυβερνοεπιθέσεις και γεγονότα ασφαλείας",
           "techEvents": "Σημαντικά συνέδρια τεχνολογίας και εκδηλώσεις",
           "techFires": "Ενεργές πυρκαγιές κοντά σε τεχνολογικές υποδομές",
-          "financeGulfInvestments": "Επενδύσεις κρατικών ταμείων πλούτου GCC και ΑΞΕ"
+          "financeGulfInvestments": "Επενδύσεις κρατικών ταμείων πλούτου GCC και ΑΞΕ",
+          "tradeRoutes": "Κύριες παγκόσμιες ναυτιλιακές γραμμές που συνδέουν λιμάνια μέσω στρατηγικών σημείων"
         },
         "notes": {
           "timeAffects": "Επηρεάζει: Σεισμούς, Καιρό, Διαμαρτυρίες, Διακοπές"

@@ -41,6 +41,7 @@
     "energy": "Energie en hulpbronnen",
     "etfFlows": "BTC ETF-tracker",
     "economic": "Economische indicatoren",
+    "tradePolicy": "Handelsbeleid",
     "macroSignals": "Marktradar",
     "commodities": "Grondstoffen",
     "monitors": "Mijn monitoren",
@@ -65,10 +66,10 @@
   },
   "modals": {
     "search": {
-      "placeholder": "Zoek naar nieuws, pijpleidingen, bases, markten...",
-      "hint": "Nieuws • Pijpleidingen • Basissen • Kabels • Datacentra • Markten",
+      "placeholder": "Zoeken of commando typen...",
+      "hint": "Zoeken • Landen • Lagen • Panelen • Navigatie • Instellingen",
       "recent": "Recente zoekopdrachten",
-      "empty": "Zoek in alle gegevensbronnen",
+      "empty": "Zoek gegevens of voer opdrachten uit",
       "noResults": "No results found",
       "navigate": "navigeren",
       "select": "selecteren",
@@ -95,10 +96,10 @@
         "techhq": "Tech-hoofdkantoor",
         "accelerator": "Gaspedaal"
       },
-      "placeholderTech": "Zoek bedrijven, AI-labs, startups, evenementen...",
-      "hintTech": "Hoofdkantoren • Bedrijven • AI Labs • Startups • Accelerators • Evenementen",
-      "placeholderFinance": "Zoek beurzen, markten, centrale banken...",
-      "hintFinance": "Beurzen • Financiële centra • Centrale banken • Grondstoffen"
+      "placeholderTech": "Zoeken of commando typen...",
+      "hintTech": "Zoeken • Bedrijven • AI Labs • Lagen • Navigatie • Instellingen",
+      "placeholderFinance": "Zoeken of commando typen...",
+      "hintFinance": "Zoeken • Beurzen • Markten • Lagen • Navigatie • Instellingen"
     },
     "signal": {
       "source": "Source",
@@ -411,7 +412,8 @@
         "financialCenters": "Financiële centra",
         "centralBanks": "Centrale banken",
         "commodityHubs": "Grondstoffenhubs",
-        "gulfInvestments": "GCC-investeringen"
+        "gulfInvestments": "GCC-investeringen",
+        "tradeRoutes": "Handelsroutes"
       },
       "layersTitle": "Lagen",
       "layerGuide": "Lagengids",
@@ -503,7 +505,8 @@
           "transportShipping": "Schepen, knelpunten, 61 strategische havens",
           "transportDelays": "Luchthavenvertragingen en grondstops (FAA)",
           "naturalEventsFull": "Aardbevingen (USGS) + stormen, branden, vulkanen, overstromingen (NASA EONET)",
-          "waterwaysLabels": "Strategische chokepoint-labels"
+          "waterwaysLabels": "Strategische chokepoint-labels",
+          "tradeRoutes": "Belangrijke wereldwijde scheepvaartroutes die havens verbinden via strategische knelpunten"
         },
         "notes": {
           "timeAffects": "Beïnvloedt: aardbevingen, weer, protesten, stroomstoringen"
@@ -766,7 +769,37 @@
       "noSpending": "Geen recente overheidsprijzen",
       "awards": "onderscheidingen",
       "noData": "Geen economische gegevens beschikbaar",
-      "noOilData": "Oliegegevens niet beschikbaar"
+      "noOilData": "Oliegegevens niet beschikbaar",
+      "centralBanks": "Central Banks",
+      "noBisData": "BIS data temporarily unavailable - will retry",
+      "policyRate": "Policy Rate",
+      "exchangeRate": "Exchange Rate",
+      "creditToGdp": "Credit / GDP",
+      "realEer": "Real EER",
+      "change": "Change",
+      "cut": "cut",
+      "hike": "hike",
+      "hold": "hold"
+    },
+    "tradePolicy": {
+      "restrictions": "Beperkingen",
+      "tariffs": "Tarieven",
+      "flows": "Handelsstromen",
+      "barriers": "Handelsbarrières",
+      "noRestrictions": "Geen actieve handelsbeperkingen",
+      "noTariffData": "Geen tariefgegevens beschikbaar",
+      "noFlowData": "Geen handelsstroomgegevens beschikbaar",
+      "noBarriers": "Geen handelsbarrières gemeld",
+      "apiKeyMissing": "WTO API-sleutel vereist — voeg deze toe in Instellingen",
+      "upstreamUnavailable": "WTO-gegevens tijdelijk niet beschikbaar — gecachete gegevens worden weergegeven",
+      "appliedRate": "Toegepast Tarief",
+      "boundRate": "Gebonden Tarief",
+      "exports": "Export",
+      "imports": "Import",
+      "yoyChange": "Verandering op Jaarbasis",
+      "highTariff": "Hoog",
+      "moderateTariff": "Gemiddeld",
+      "lowTariff": "Laag"
     },
     "satelliteFires": {
       "region": "Regio",
@@ -1810,7 +1843,8 @@
     "panelCatCryptoDigital": "Crypto & Digitaal",
     "panelCatCentralBanks": "Centrale Banken & Economie",
     "panelCatDeals": "Deals & Institutioneel",
-    "panelCatGulfMena": "Golf & MENA"
+    "panelCatGulfMena": "Golf & MENA",
+    "panelCatTradePolicy": "Handelsbeleid"
   },
   "app": {
     "title": "World Monitor",

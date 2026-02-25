@@ -137,7 +137,8 @@
     "panelCatCryptoDigital": "العملات الرقمية",
     "panelCatCentralBanks": "البنوك المركزية والاقتصاد",
     "panelCatDeals": "الصفقات والمؤسسات",
-    "panelCatGulfMena": "الخليج والشرق الأوسط"
+    "panelCatGulfMena": "الخليج والشرق الأوسط",
+    "panelCatTradePolicy": "السياسة التجارية"
   },
   "panels": {
     "liveNews": "أخبار مباشرة",
@@ -166,6 +167,7 @@
     "polymarket": "التنبؤات",
     "commodities": "السلع",
     "economic": "المؤشرات الاقتصادية",
+    "tradePolicy": "السياسة التجارية",
     "finance": "المالية",
     "tech": "التقنية",
     "crypto": "العملات الرقمية",
@@ -205,14 +207,14 @@
   },
   "modals": {
     "search": {
-      "placeholder": "البحث في الأخبار، خطوط الأنابيب، القواعد، الأسواق...",
-      "hint": "أخبار • أنابيب • قواعد • كابلات • مراكز بيانات • أسواق",
-      "placeholderTech": "البحث في الشركات، مختبرات AI، الشركات الناشئة، الفعاليات...",
-      "hintTech": "مقرات • شركات • مختبرات AI • شركات ناشئة • مسرّعات • فعاليات",
-      "placeholderFinance": "البحث في البورصات، الأسواق، البنوك المركزية...",
-      "hintFinance": "بورصات • مراكز مالية • بنوك مركزية • سلع",
+      "placeholder": "ابحث أو اكتب أمرًا...",
+      "hint": "بحث • دول • طبقات • لوحات • تنقل • إعدادات",
+      "placeholderTech": "ابحث أو اكتب أمرًا...",
+      "hintTech": "بحث • شركات • مختبرات AI • طبقات • تنقل • إعدادات",
+      "placeholderFinance": "ابحث أو اكتب أمرًا...",
+      "hintFinance": "بحث • بورصات • أسواق • طبقات • تنقل • إعدادات",
       "recent": "عمليات البحث الأخيرة",
-      "empty": "البحث عبر جميع مصادر البيانات",
+      "empty": "ابحث في البيانات أو نفّذ أوامر",
       "noResults": "لا توجد نتائج",
       "navigate": "تنقّل",
       "select": "اختيار",
@@ -523,7 +525,37 @@
       "noIndicatorData": "لا تتوفر بيانات مؤشرات بعد - قد يكون FRED قيد التحميل",
       "noOilDataRetry": "بيانات النفط غير متاحة مؤقتاً - ستتم إعادة المحاولة",
       "vsPreviousWeek": "مقارنة بالأسبوع السابق",
-      "in": "في"
+      "in": "في",
+      "centralBanks": "Central Banks",
+      "noBisData": "BIS data temporarily unavailable - will retry",
+      "policyRate": "Policy Rate",
+      "exchangeRate": "Exchange Rate",
+      "creditToGdp": "Credit / GDP",
+      "realEer": "Real EER",
+      "change": "Change",
+      "cut": "cut",
+      "hike": "hike",
+      "hold": "hold"
+    },
+    "tradePolicy": {
+      "restrictions": "القيود",
+      "tariffs": "التعريفات الجمركية",
+      "flows": "التدفقات التجارية",
+      "barriers": "الحواجز",
+      "noRestrictions": "لا توجد قيود تجارية نشطة",
+      "noTariffData": "لا تتوفر بيانات التعريفات الجمركية",
+      "noFlowData": "لا تتوفر بيانات التدفقات التجارية",
+      "noBarriers": "لم يتم الإبلاغ عن حواجز تجارية",
+      "apiKeyMissing": "مفتاح WTO API مطلوب — أضفه في الإعدادات",
+      "upstreamUnavailable": "بيانات WTO غير متاحة مؤقتاً — عرض البيانات المخزنة",
+      "appliedRate": "المعدل المطبق",
+      "boundRate": "المعدل الملزم",
+      "exports": "الصادرات",
+      "imports": "الواردات",
+      "yoyChange": "التغير السنوي",
+      "highTariff": "مرتفع",
+      "moderateTariff": "متوسط",
+      "lowTariff": "منخفض"
     },
     "gdelt": {
       "empty": "لا توجد مقالات حديثة لهذا الموضوع"
@@ -750,7 +782,8 @@
         "financialCenters": "مراكز مالية",
         "centralBanks": "بنوك مركزية",
         "commodityHubs": "مراكز سلعية",
-        "gulfInvestments": "استثمارات دول الخليج"
+        "gulfInvestments": "استثمارات دول الخليج",
+        "tradeRoutes": "طرق التجارة"
       },
       "tooltip": {
         "earthquake": "زلزال",
@@ -840,7 +873,8 @@
           "transportShipping": "سفن ونقاط اختناق و61 ميناءً استراتيجياً",
           "transportDelays": "تأخيرات المطارات والتوقفات الأرضية (FAA)",
           "naturalEventsFull": "زلازل (USGS) + عواصف وحرائق وبراكين وفيضانات (NASA EONET)",
-          "waterwaysLabels": "تسميات نقاط الاختناق الاستراتيجية"
+          "waterwaysLabels": "تسميات نقاط الاختناق الاستراتيجية",
+          "tradeRoutes": "خطوط الشحن العالمية الرئيسية التي تربط الموانئ عبر نقاط الاختناق الاستراتيجية"
         },
         "notes": {
           "timeAffects": "يؤثر على: الزلازل، الطقس، الاحتجاجات، الانقطاعات"

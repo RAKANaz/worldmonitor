@@ -41,6 +41,7 @@
     "energy": "Energi & resurser",
     "etfFlows": "BTC ETF-spårare",
     "economic": "Ekonomiska indikatorer",
+    "tradePolicy": "Handelspolitik",
     "macroSignals": "Marknadsradar",
     "commodities": "Handelsvaror",
     "monitors": "Mina monitorer",
@@ -65,10 +66,10 @@
   },
   "modals": {
     "search": {
-      "placeholder": "Sök efter nyheter, pipelines, baser, marknader...",
-      "hint": "Nyheter • Rörledningar • Baser • Kablar • Datacenter • Marknader",
+      "placeholder": "Sök eller skriv ett kommando...",
+      "hint": "Sök • Länder • Lager • Paneler • Navigering • Inställningar",
       "recent": "Senaste sökningar",
-      "empty": "Sök i alla datakällor",
+      "empty": "Sök data eller kör kommandon",
       "noResults": "No results found",
       "navigate": "navigera",
       "select": "välja",
@@ -95,10 +96,10 @@
         "techhq": "Teknikhuvudkontor",
         "accelerator": "Accelerator"
       },
-      "placeholderTech": "Sök företag, AI-labb, startups, evenemang...",
-      "hintTech": "HQs • Företag • AI Labs • Startups • Acceleratorer • Events",
-      "placeholderFinance": "Sök börser, marknader, centralbanker...",
-      "hintFinance": "Börser • Finansiella centra • Centralbanker • Råvaror"
+      "placeholderTech": "Sök eller skriv ett kommando...",
+      "hintTech": "Sök • Företag • AI-labb • Lager • Navigering • Inställningar",
+      "placeholderFinance": "Sök eller skriv ett kommando...",
+      "hintFinance": "Sök • Börser • Marknader • Lager • Navigering • Inställningar"
     },
     "signal": {
       "source": "Source",
@@ -411,7 +412,8 @@
         "financialCenters": "Finansiella centra",
         "centralBanks": "centralbanker",
         "commodityHubs": "Råvaruhubbar",
-        "gulfInvestments": "GCC-investeringar"
+        "gulfInvestments": "GCC-investeringar",
+        "tradeRoutes": "Handelsrutter"
       },
       "layersTitle": "Lager",
       "layerGuide": "Lagerguide",
@@ -503,7 +505,8 @@
           "transportShipping": "Fartyg, chokepoints, 61 strategiska hamnar",
           "transportDelays": "Flygplatsförseningar och markstopp (FAA)",
           "naturalEventsFull": "Jordbävningar (USGS) + stormar, bränder, vulkaner, översvämningar (NASA EONET)",
-          "waterwaysLabels": "Strategiska chokepointetiketter"
+          "waterwaysLabels": "Strategiska chokepointetiketter",
+          "tradeRoutes": "Stora globala sjöfartsleder som förbinder hamnar via strategiska flaskhalsar"
         },
         "notes": {
           "timeAffects": "Påverkar: Jordbävningar, väder, protester, avbrott"
@@ -766,7 +769,37 @@
       "noSpending": "Inga nya statliga utmärkelser",
       "awards": "utmärkelser",
       "noData": "Inga ekonomiska data tillgängliga",
-      "noOilData": "Oljedata ej tillgänglig"
+      "noOilData": "Oljedata ej tillgänglig",
+      "centralBanks": "Central Banks",
+      "noBisData": "BIS data temporarily unavailable - will retry",
+      "policyRate": "Policy Rate",
+      "exchangeRate": "Exchange Rate",
+      "creditToGdp": "Credit / GDP",
+      "realEer": "Real EER",
+      "change": "Change",
+      "cut": "cut",
+      "hike": "hike",
+      "hold": "hold"
+    },
+    "tradePolicy": {
+      "restrictions": "Restriktioner",
+      "tariffs": "Tullar",
+      "flows": "Handelsflöden",
+      "barriers": "Handelsbarriärer",
+      "noRestrictions": "Inga aktiva handelsrestriktioner",
+      "noTariffData": "Inga tulldata tillgängliga",
+      "noFlowData": "Inga handelsflödesdata tillgängliga",
+      "noBarriers": "Inga handelsbarriärer rapporterade",
+      "apiKeyMissing": "WTO API-nyckel krävs — lägg till den i Inställningar",
+      "upstreamUnavailable": "WTO-data tillfälligt otillgänglig — visar cachad data",
+      "appliedRate": "Tillämpad Tullsats",
+      "boundRate": "Bunden Tullsats",
+      "exports": "Export",
+      "imports": "Import",
+      "yoyChange": "Förändring på Årsbasis",
+      "highTariff": "Hög",
+      "moderateTariff": "Måttlig",
+      "lowTariff": "Låg"
     },
     "satelliteFires": {
       "region": "Område",
@@ -1810,7 +1843,8 @@
     "panelCatCryptoDigital": "Krypto & Digitalt",
     "panelCatCentralBanks": "Centralbanker & Ekonomi",
     "panelCatDeals": "Affärer & Institutionellt",
-    "panelCatGulfMena": "Gulfen & MENA"
+    "panelCatGulfMena": "Gulfen & MENA",
+    "panelCatTradePolicy": "Handelspolitik"
   },
   "app": {
     "title": "World Monitor",

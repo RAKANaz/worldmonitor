@@ -137,7 +137,8 @@
     "panelCatCryptoDigital": "คริปโต & ดิจิทัล",
     "panelCatCentralBanks": "ธนาคารกลาง & เศรษฐกิจ",
     "panelCatDeals": "ดีล & สถาบัน",
-    "panelCatGulfMena": "อ่าวเปอร์เซีย & MENA"
+    "panelCatGulfMena": "อ่าวเปอร์เซีย & MENA",
+    "panelCatTradePolicy": "นโยบายการค้า"
   },
   "panels": {
     "liveNews": "ข่าวสด",
@@ -166,6 +167,7 @@
     "polymarket": "การพยากรณ์",
     "commodities": "สินค้าโภคภัณฑ์",
     "economic": "ตัวชี้วัดเศรษฐกิจ",
+    "tradePolicy": "นโยบายการค้า",
     "finance": "การเงิน",
     "tech": "เทคโนโลยี",
     "crypto": "คริปโต",
@@ -205,14 +207,14 @@
   },
   "modals": {
     "search": {
-      "placeholder": "ค้นหาข่าว, ท่อส่ง, ฐานทัพ, ตลาด...",
-      "hint": "ข่าว • ท่อส่ง • ฐานทัพ • สายเคเบิล • ศูนย์ข้อมูล • ตลาด",
-      "placeholderTech": "ค้นหาบริษัท, ห้องปฏิบัติการ AI, สตาร์ทอัพ, งาน...",
-      "hintTech": "สำนักงานใหญ่ • บริษัท • ห้องปฏิบัติการ AI • สตาร์ทอัพ • แอคเซเลอเรเตอร์ • งาน",
-      "placeholderFinance": "ค้นหาตลาดหลักทรัพย์, ตลาด, ธนาคารกลาง...",
-      "hintFinance": "ตลาดหลักทรัพย์ • ศูนย์กลางการเงิน • ธนาคารกลาง • สินค้าโภคภัณฑ์",
+      "placeholder": "ค้นหาหรือพิมพ์คำสั่ง...",
+      "hint": "ค้นหา • ประเทศ • เลเยอร์ • แผง • การนำทาง • การตั้งค่า",
+      "placeholderTech": "ค้นหาหรือพิมพ์คำสั่ง...",
+      "hintTech": "ค้นหา • บริษัท • ห้องปฏิบัติการ AI • เลเยอร์ • การนำทาง • การตั้งค่า",
+      "placeholderFinance": "ค้นหาหรือพิมพ์คำสั่ง...",
+      "hintFinance": "ค้นหา • ตลาดหลักทรัพย์ • ตลาด • เลเยอร์ • การนำทาง • การตั้งค่า",
       "recent": "การค้นหาล่าสุด",
-      "empty": "ค้นหาจากแหล่งข้อมูลทั้งหมด",
+      "empty": "ค้นหาข้อมูลหรือรันคำสั่ง",
       "noResults": "ไม่พบผลลัพธ์",
       "navigate": "นำทาง",
       "select": "เลือก",
@@ -523,7 +525,37 @@
       "noIndicatorData": "ยังไม่มีข้อมูลตัวชี้วัด - FRED อาจกำลังโหลด",
       "noOilDataRetry": "ข้อมูลน้ำมันไม่พร้อมใช้งานชั่วคราว - จะลองใหม่อัตโนมัติ",
       "vsPreviousWeek": "เทียบกับสัปดาห์ก่อน",
-      "in": "ใน"
+      "in": "ใน",
+      "centralBanks": "Central Banks",
+      "noBisData": "BIS data temporarily unavailable - will retry",
+      "policyRate": "Policy Rate",
+      "exchangeRate": "Exchange Rate",
+      "creditToGdp": "Credit / GDP",
+      "realEer": "Real EER",
+      "change": "Change",
+      "cut": "cut",
+      "hike": "hike",
+      "hold": "hold"
+    },
+    "tradePolicy": {
+      "restrictions": "ข้อจำกัด",
+      "tariffs": "ภาษีศุลกากร",
+      "flows": "กระแสการค้า",
+      "barriers": "อุปสรรคทางการค้า",
+      "noRestrictions": "ไม่มีข้อจำกัดทางการค้าที่ใช้งานอยู่",
+      "noTariffData": "ไม่มีข้อมูลภาษีศุลกากร",
+      "noFlowData": "ไม่มีข้อมูลกระแสการค้า",
+      "noBarriers": "ไม่มีรายงานอุปสรรคทางการค้า",
+      "apiKeyMissing": "ต้องใช้คีย์ API ของ WTO — เพิ่มในการตั้งค่า",
+      "upstreamUnavailable": "ข้อมูล WTO ไม่พร้อมใช้งานชั่วคราว — แสดงข้อมูลแคช",
+      "appliedRate": "อัตราที่ใช้",
+      "boundRate": "อัตราผูกพัน",
+      "exports": "การส่งออก",
+      "imports": "การนำเข้า",
+      "yoyChange": "เปลี่ยนแปลงรายปี",
+      "highTariff": "สูง",
+      "moderateTariff": "ปานกลาง",
+      "lowTariff": "ต่ำ"
     },
     "gdelt": {
       "empty": "ไม่มีบทความล่าสุดสำหรับหัวข้อนี้"
@@ -750,7 +782,8 @@
         "financialCenters": "ศูนย์กลางการเงิน",
         "centralBanks": "ธนาคารกลาง",
         "commodityHubs": "ศูนย์กลางสินค้าโภคภัณฑ์",
-        "gulfInvestments": "การลงทุน GCC"
+        "gulfInvestments": "การลงทุน GCC",
+        "tradeRoutes": "เส้นทางการค้า"
       },
       "tooltip": {
         "earthquake": "แผ่นดินไหว",
@@ -840,7 +873,8 @@
           "transportShipping": "เรือ, จุดคอขวด, ท่าเรือยุทธศาสตร์ 61 แห่ง",
           "transportDelays": "ความล่าช้าของสนามบินและการหยุดบินภาคพื้น (FAA)",
           "naturalEventsFull": "แผ่นดินไหว (USGS) + พายุ ไฟ ภูเขาไฟ น้ำท่วม (NASA EONET)",
-          "waterwaysLabels": "ป้ายกำกับจุดคอขวดยุทธศาสตร์"
+          "waterwaysLabels": "ป้ายกำกับจุดคอขวดยุทธศาสตร์",
+          "tradeRoutes": "เส้นทางเดินเรือหลักของโลกที่เชื่อมต่อท่าเรือผ่านจุดยุทธศาสตร์"
         },
         "notes": {
           "timeAffects": "ส่งผลต่อ: แผ่นดินไหว, สภาพอากาศ, การประท้วง, การหยุดชะงัก"

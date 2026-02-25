@@ -137,7 +137,8 @@
     "panelCatCryptoDigital": "Crypto & Digital",
     "panelCatCentralBanks": "Banques Centrales & Économie",
     "panelCatDeals": "Transactions & Institutionnel",
-    "panelCatGulfMena": "Golfe & MENA"
+    "panelCatGulfMena": "Golfe & MENA",
+    "panelCatTradePolicy": "Politique Commerciale"
   },
   "panels": {
     "liveNews": "Actualités en direct",
@@ -165,6 +166,7 @@
     "polymarket": "Prédictions",
     "commodities": "Matières premières",
     "economic": "Indicateurs économiques",
+    "tradePolicy": "Politique Commerciale",
     "finance": "Finance",
     "tech": "Technologie",
     "crypto": "Crypto",
@@ -205,10 +207,10 @@
   },
   "modals": {
     "search": {
-      "placeholder": "Rechercher actus, pipelines, bases, marchés...",
-      "hint": "Actus • Pipelines • Bases • Câbles • Datacenters • Marchés",
+      "placeholder": "Rechercher ou saisir une commande...",
+      "hint": "Recherche • Pays • Couches • Panneaux • Navigation • Paramètres",
       "recent": "Recherches récentes",
-      "empty": "Rechercher dans toutes les sources",
+      "empty": "Rechercher des données ou exécuter des commandes",
       "noResults": "Aucun résultat trouvé",
       "navigate": "naviguer",
       "select": "sélectionner",
@@ -235,10 +237,10 @@
         "techhq": "Siège Tech",
         "accelerator": "Accélérateur"
       },
-      "placeholderTech": "Rechercher des entreprises, des laboratoires d'IA, des startups, des événements...",
-      "hintTech": "Sièges • Entreprises • AI Labs • Startups • Accélérateurs • Événements",
-      "placeholderFinance": "Rechercher des bourses, des marchés, des banques centrales...",
-      "hintFinance": "Bourses • Centres financiers • Banques centrales • Matières premières"
+      "placeholderTech": "Rechercher ou saisir une commande...",
+      "hintTech": "Recherche • Entreprises • Labos IA • Couches • Navigation • Paramètres",
+      "placeholderFinance": "Rechercher ou saisir une commande...",
+      "hintFinance": "Recherche • Bourses • Marchés • Couches • Navigation • Paramètres"
     },
     "signal": {
       "title": "DÉCOUVERTE RENSEIGNEMENT",
@@ -523,7 +525,37 @@
       "noIndicatorData": "Aucune donnée d'indicateur pour l'instant - FRED est peut-être en cours de chargement",
       "noOilDataRetry": "Données pétrolières temporairement indisponibles - je vais réessayer",
       "vsPreviousWeek": "par rapport à la semaine précédente",
-      "in": "dans"
+      "in": "dans",
+      "centralBanks": "Central Banks",
+      "noBisData": "BIS data temporarily unavailable - will retry",
+      "policyRate": "Policy Rate",
+      "exchangeRate": "Exchange Rate",
+      "creditToGdp": "Credit / GDP",
+      "realEer": "Real EER",
+      "change": "Change",
+      "cut": "cut",
+      "hike": "hike",
+      "hold": "hold"
+    },
+    "tradePolicy": {
+      "restrictions": "Restrictions",
+      "tariffs": "Droits de douane",
+      "flows": "Flux commerciaux",
+      "barriers": "Barrières",
+      "noRestrictions": "Aucune restriction commerciale active",
+      "noTariffData": "Aucune donnée tarifaire disponible",
+      "noFlowData": "Aucune donnée de flux commercial disponible",
+      "noBarriers": "Aucune barrière commerciale signalée",
+      "apiKeyMissing": "Clé API OMC requise — ajoutez-la dans les Paramètres",
+      "upstreamUnavailable": "Données OMC temporairement indisponibles — affichage des données en cache",
+      "appliedRate": "Taux appliqué",
+      "boundRate": "Taux consolidé",
+      "exports": "Exportations",
+      "imports": "Importations",
+      "yoyChange": "Variation annuelle",
+      "highTariff": "Élevé",
+      "moderateTariff": "Modéré",
+      "lowTariff": "Faible"
     },
     "gdelt": {
       "empty": "Aucun article récent pour ce sujet"
@@ -750,7 +782,8 @@
         "financialCenters": "Centres financiers",
         "centralBanks": "Banques centrales",
         "commodityHubs": "Centres de matières premières",
-        "gulfInvestments": "Investissements du CCG"
+        "gulfInvestments": "Investissements du CCG",
+        "tradeRoutes": "Routes Commerciales"
       },
       "tooltip": {
         "earthquake": "Tremblement de terre",
@@ -840,7 +873,8 @@
           "transportShipping": "Navires, points d'étranglement, 61 ports stratégiques",
           "transportDelays": "Retards à l'aéroport et arrêts au sol (FAA)",
           "naturalEventsFull": "Tremblements de terre (USGS) + tempêtes, incendies, volcans, inondations (NASA EONET)",
-          "waterwaysLabels": "Étiquettes de points d'étranglement stratégiques"
+          "waterwaysLabels": "Étiquettes de points d'étranglement stratégiques",
+          "tradeRoutes": "Principales routes maritimes mondiales reliant les ports via des points de passage stratégiques"
         },
         "notes": {
           "timeAffects": "Affecte : tremblements de terre, conditions météorologiques, manifestations, pannes"

@@ -137,7 +137,8 @@
     "panelCatCryptoDigital": "Крипто и цифровые активы",
     "panelCatCentralBanks": "Центробанки и экономика",
     "panelCatDeals": "Сделки и институционалы",
-    "panelCatGulfMena": "Залив и БВСА"
+    "panelCatGulfMena": "Залив и БВСА",
+    "panelCatTradePolicy": "Торговая политика"
   },
   "panels": {
     "liveNews": "Новости в реальном времени",
@@ -166,6 +167,7 @@
     "polymarket": "Прогнозы",
     "commodities": "Сырьевые товары",
     "economic": "Экономические индикаторы",
+    "tradePolicy": "Торговая политика",
     "finance": "Финансы",
     "tech": "Технологии",
     "crypto": "Криптовалюты",
@@ -205,14 +207,14 @@
   },
   "modals": {
     "search": {
-      "placeholder": "Поиск новостей, трубопроводов, баз, рынков...",
-      "hint": "Новости • Трубопроводы • Базы • Кабели • Дата-центры • Рынки",
-      "placeholderTech": "Поиск компаний, ИИ-лабораторий, стартапов, мероприятий...",
-      "hintTech": "Штаб-квартиры • Компании • ИИ-лаборатории • Стартапы • Акселераторы • Мероприятия",
-      "placeholderFinance": "Поиск бирж, рынков, центральных банков...",
-      "hintFinance": "Биржи • Финансовые центры • Центральные банки • Сырьё",
+      "placeholder": "Поиск или введите команду...",
+      "hint": "Поиск • Страны • Слои • Панели • Навигация • Настройки",
+      "placeholderTech": "Поиск или введите команду...",
+      "hintTech": "Поиск • Компании • ИИ-лаборатории • Слои • Навигация • Настройки",
+      "placeholderFinance": "Поиск или введите команду...",
+      "hintFinance": "Поиск • Биржи • Рынки • Слои • Навигация • Настройки",
       "recent": "Недавние запросы",
-      "empty": "Поиск по всем источникам данных",
+      "empty": "Поиск данных или выполнение команд",
       "noResults": "Ничего не найдено",
       "navigate": "навигация",
       "select": "выбрать",
@@ -523,7 +525,37 @@
       "noIndicatorData": "Данные индикаторов отсутствуют — FRED может загружаться",
       "noOilDataRetry": "Данные по нефти временно недоступны — повторная попытка",
       "vsPreviousWeek": "к предыдущей неделе",
-      "in": "в"
+      "in": "в",
+      "centralBanks": "Central Banks",
+      "noBisData": "BIS data temporarily unavailable - will retry",
+      "policyRate": "Policy Rate",
+      "exchangeRate": "Exchange Rate",
+      "creditToGdp": "Credit / GDP",
+      "realEer": "Real EER",
+      "change": "Change",
+      "cut": "cut",
+      "hike": "hike",
+      "hold": "hold"
+    },
+    "tradePolicy": {
+      "restrictions": "Ограничения",
+      "tariffs": "Тарифы",
+      "flows": "Торговые потоки",
+      "barriers": "Барьеры",
+      "noRestrictions": "Нет активных торговых ограничений",
+      "noTariffData": "Данные о тарифах недоступны",
+      "noFlowData": "Данные о торговых потоках недоступны",
+      "noBarriers": "Торговые барьеры не зарегистрированы",
+      "apiKeyMissing": "Требуется ключ API ВТО — добавьте его в Настройках",
+      "upstreamUnavailable": "Данные ВТО временно недоступны — отображаются кэшированные данные",
+      "appliedRate": "Применяемая ставка",
+      "boundRate": "Связанная ставка",
+      "exports": "Экспорт",
+      "imports": "Импорт",
+      "yoyChange": "Изменение за год",
+      "highTariff": "Высокий",
+      "moderateTariff": "Умеренный",
+      "lowTariff": "Низкий"
     },
     "gdelt": {
       "empty": "Нет свежих статей по этой теме"
@@ -750,7 +782,8 @@
         "financialCenters": "Финансовые центры",
         "centralBanks": "Центральные банки",
         "commodityHubs": "Сырьевые хабы",
-        "gulfInvestments": "Инвестиции стран Залива"
+        "gulfInvestments": "Инвестиции стран Залива",
+        "tradeRoutes": "Торговые маршруты"
       },
       "tooltip": {
         "earthquake": "Землетрясение",
@@ -840,7 +873,8 @@
           "transportShipping": "Суда, узкие места, 61 стратегический порт",
           "transportDelays": "Задержки и остановки аэропортов (FAA)",
           "naturalEventsFull": "Землетрясения (USGS) + штормы, пожары, вулканы, наводнения (NASA EONET)",
-          "waterwaysLabels": "Обозначения стратегических узких мест"
+          "waterwaysLabels": "Обозначения стратегических узких мест",
+          "tradeRoutes": "Основные мировые судоходные маршруты, соединяющие порты через стратегические узкие места"
         },
         "notes": {
           "timeAffects": "Влияет на: Землетрясения, Погода, Протесты, Сбои"

@@ -273,6 +273,16 @@ export const SOURCE_TIERS: Record<string, number> = {
   'ArXiv AI': 4,
   'AI News': 4,
   'Layoffs News': 4,
+
+  // Tier 2 - Positive News Sources (Happy variant)
+  'Good News Network': 2,
+  'Positive.News': 2,
+  'Reasons to be Cheerful': 2,
+  'Optimist Daily': 2,
+  'GNN Science': 3,
+  'GNN Animals': 3,
+  'GNN Health': 3,
+  'GNN Heroes': 3,
 };
 
 export function getSourceTier(sourceName: string): number {
@@ -972,8 +982,48 @@ const FINANCE_FEEDS: Record<string, Feed[]> = {
   ],
 };
 
+const HAPPY_FEEDS: Record<string, Feed[]> = {
+  positive: [
+    { name: 'Good News Network', url: rss('https://www.goodnewsnetwork.org/feed/') },
+    { name: 'Positive.News', url: rss('https://www.positive.news/feed/') },
+    { name: 'Reasons to be Cheerful', url: rss('https://reasonstobecheerful.world/feed/') },
+    { name: 'Optimist Daily', url: rss('https://www.optimistdaily.com/feed/') },
+    { name: 'Upworthy', url: rss('https://www.upworthy.com/feed/') },
+    { name: 'DailyGood', url: rss('https://www.dailygood.org/feed') },
+    { name: 'Good Good Good', url: rss('https://www.goodgoodgood.co/articles/rss.xml') },
+    { name: 'GOOD Magazine', url: rss('https://www.good.is/feed/') },
+    { name: 'Sunny Skyz', url: rss('https://www.sunnyskyz.com/rss_tebow.php') },
+    { name: 'The Better India', url: rss('https://thebetterindia.com/feed/') },
+  ],
+  science: [
+    { name: 'GNN Science', url: rss('https://www.goodnewsnetwork.org/category/news/science/feed/') },
+    { name: 'ScienceDaily', url: rss('https://www.sciencedaily.com/rss/top.xml') },
+    { name: 'Nature News', url: rss('https://feeds.nature.com/nature/rss/current') },
+    { name: 'Live Science', url: rss('https://www.livescience.com/feeds/all') },
+    { name: 'New Scientist', url: rss('https://www.newscientist.com/feed/home/') },
+    { name: 'Singularity Hub', url: rss('https://singularityhub.com/feed/') },
+    { name: 'Human Progress', url: rss('https://humanprogress.org/feed/') },
+    { name: 'Greater Good (Berkeley)', url: rss('https://greatergood.berkeley.edu/rss') },
+  ],
+  nature: [
+    { name: 'GNN Animals', url: rss('https://www.goodnewsnetwork.org/category/news/animals/feed/') },
+  ],
+  health: [
+    { name: 'GNN Health', url: rss('https://www.goodnewsnetwork.org/category/news/health/feed/') },
+  ],
+  inspiring: [
+    { name: 'GNN Heroes', url: rss('https://www.goodnewsnetwork.org/category/news/inspiring/feed/') },
+  ],
+};
+
 // Variant-aware exports
-export const FEEDS = SITE_VARIANT === 'tech' ? TECH_FEEDS : SITE_VARIANT === 'finance' ? FINANCE_FEEDS : FULL_FEEDS;
+export const FEEDS = SITE_VARIANT === 'tech'
+  ? TECH_FEEDS
+  : SITE_VARIANT === 'finance'
+    ? FINANCE_FEEDS
+    : SITE_VARIANT === 'happy'
+      ? HAPPY_FEEDS
+      : FULL_FEEDS;
 
 export const SOURCE_REGION_MAP: Record<string, { labelKey: string; feedKeys: string[] }> = {
   // Full (geopolitical) variant regions

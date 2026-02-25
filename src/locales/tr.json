@@ -137,7 +137,8 @@
     "panelCatCryptoDigital": "Kripto & Dijital",
     "panelCatCentralBanks": "Merkez Bankaları & Ekonomi",
     "panelCatDeals": "Anlaşmalar & Kurumsal",
-    "panelCatGulfMena": "Körfez & MENA"
+    "panelCatGulfMena": "Körfez & MENA",
+    "panelCatTradePolicy": "Ticaret Politikası"
   },
   "panels": {
     "liveNews": "Canli Haberler",
@@ -166,6 +167,7 @@
     "polymarket": "Tahminler",
     "commodities": "Emtialar",
     "economic": "Ekonomik Gostergeler",
+    "tradePolicy": "Ticaret Politikası",
     "finance": "Finansal",
     "tech": "Teknoloji",
     "crypto": "Kripto",
@@ -205,14 +207,14 @@
   },
   "modals": {
     "search": {
-      "placeholder": "Haberler, boru hatlari, usler, piyasalar ara...",
-      "hint": "Haberler - Boru Hatlari - Usler - Kablolar - Veri Merkezleri - Piyasalar",
-      "placeholderTech": "Sirketler, yapay zeka laboratuvarlari, girisimler, etkinlikler ara...",
-      "hintTech": "Merkezler - Sirketler - Yapay Zeka Lab. - Girisimler - Hizlandiricilar - Etkinlikler",
-      "placeholderFinance": "Borsalar, piyasalar, merkez bankalari ara...",
-      "hintFinance": "Borsalar - Finans Merkezleri - Merkez Bankalari - Emtialar",
+      "placeholder": "Ara veya komut yaz...",
+      "hint": "Arama • Ülkeler • Katmanlar • Paneller • Gezinme • Ayarlar",
+      "placeholderTech": "Ara veya komut yaz...",
+      "hintTech": "Arama • Şirketler • Yapay Zeka Lab. • Katmanlar • Gezinme • Ayarlar",
+      "placeholderFinance": "Ara veya komut yaz...",
+      "hintFinance": "Arama • Borsalar • Piyasalar • Katmanlar • Gezinme • Ayarlar",
       "recent": "Son Aramalar",
-      "empty": "Tum veri kaynaklarinda ara",
+      "empty": "Veri ara veya komut çalıştır",
       "noResults": "Sonuc bulunamadi",
       "navigate": "gezin",
       "select": "sec",
@@ -523,7 +525,37 @@
       "noIndicatorData": "Henuz gosterge verisi yok - FRED yuklenme asamasinda olabilir",
       "noOilDataRetry": "Petrol verisi gecici olarak kullanilamiyor - tekrar denenecek",
       "vsPreviousWeek": "onceki haftaya gore",
-      "in": "icinde"
+      "in": "icinde",
+      "centralBanks": "Central Banks",
+      "noBisData": "BIS data temporarily unavailable - will retry",
+      "policyRate": "Policy Rate",
+      "exchangeRate": "Exchange Rate",
+      "creditToGdp": "Credit / GDP",
+      "realEer": "Real EER",
+      "change": "Change",
+      "cut": "cut",
+      "hike": "hike",
+      "hold": "hold"
+    },
+    "tradePolicy": {
+      "restrictions": "Kısıtlamalar",
+      "tariffs": "Gümrük Tarifeleri",
+      "flows": "Ticaret Akışları",
+      "barriers": "Engeller",
+      "noRestrictions": "Aktif ticaret kısıtlaması yok",
+      "noTariffData": "Tarife verisi mevcut değil",
+      "noFlowData": "Ticaret akışı verisi mevcut değil",
+      "noBarriers": "Ticaret engeli bildirilmedi",
+      "apiKeyMissing": "WTO API anahtarı gerekli — Ayarlar'dan ekleyin",
+      "upstreamUnavailable": "WTO verileri geçici olarak kullanılamıyor — önbellek verileri gösteriliyor",
+      "appliedRate": "Uygulanan Oran",
+      "boundRate": "Bağlı Oran",
+      "exports": "İhracat",
+      "imports": "İthalat",
+      "yoyChange": "Yıllık Değişim",
+      "highTariff": "Yüksek",
+      "moderateTariff": "Orta",
+      "lowTariff": "Düşük"
     },
     "gdelt": {
       "empty": "Bu konu icin son makale yok"
@@ -750,7 +782,8 @@
         "financialCenters": "Finans Merkezleri",
         "centralBanks": "Merkez Bankalari",
         "commodityHubs": "Emtia Merkezleri",
-        "gulfInvestments": "GCC Yatirimlari"
+        "gulfInvestments": "GCC Yatirimlari",
+        "tradeRoutes": "Ticaret Rotaları"
       },
       "tooltip": {
         "earthquake": "Deprem",
@@ -840,7 +873,8 @@
           "transportShipping": "Gemiler, darbogazlar, 61 stratejik liman",
           "transportDelays": "Havaalani gecikmeleri ve yer durdurmalari (FAA)",
           "naturalEventsFull": "Depremler (USGS) + firtinalar, yanginlar, yanardaglar, seller (NASA EONET)",
-          "waterwaysLabels": "Stratejik darbogaz etiketleri"
+          "waterwaysLabels": "Stratejik darbogaz etiketleri",
+          "tradeRoutes": "Limanları stratejik darboğazlar üzerinden bağlayan başlıca küresel deniz yolları"
         },
         "notes": {
           "timeAffects": "Etkiler: Depremler, Hava Durumu, Protestolar, Kesintiler"

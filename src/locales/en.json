@@ -137,7 +137,8 @@
     "panelCatCryptoDigital": "Crypto & Digital",
     "panelCatCentralBanks": "Central Banks & Econ",
     "panelCatDeals": "Deals & Institutional",
-    "panelCatGulfMena": "Gulf & MENA"
+    "panelCatGulfMena": "Gulf & MENA",
+    "panelCatTradePolicy": "Trade Policy"
   },
   "panels": {
     "liveNews": "Live News",
@@ -166,6 +167,7 @@
     "polymarket": "Predictions",
     "commodities": "Commodities",
     "economic": "Economic Indicators",
+    "tradePolicy": "Trade Policy",
     "finance": "Financial",
     "tech": "Technology",
     "crypto": "Crypto",
@@ -178,6 +180,7 @@
     "etfFlows": "BTC ETF Tracker",
     "stablecoins": "Stablecoins",
     "ucdpEvents": "UCDP Conflict Events",
+    "giving": "Global Giving",
     "displacement": "UNHCR Displacement",
     "climate": "Climate Anomalies",
     "populationExposure": "Population Exposure",
@@ -205,14 +208,14 @@
   },
   "modals": {
     "search": {
-      "placeholder": "Search news, pipelines, bases, markets...",
-      "hint": "News • Pipelines • Bases • Cables • Datacenters • Markets",
-      "placeholderTech": "Search companies, AI labs, startups, events...",
-      "hintTech": "HQs • Companies • AI Labs • Startups • Accelerators • Events",
-      "placeholderFinance": "Search exchanges, markets, central banks...",
-      "hintFinance": "Exchanges • Financial Centers • Central Banks • Commodities",
+      "placeholder": "Search or type a command...",
+      "hint": "Search • Countries • Layers • Panels • Navigation • Settings",
+      "placeholderTech": "Search or type a command...",
+      "hintTech": "Search • Companies • AI Labs • Layers • Navigation • Settings",
+      "placeholderFinance": "Search or type a command...",
+      "hintFinance": "Search • Exchanges • Markets • Layers • Navigation • Settings",
       "recent": "Recent Searches",
-      "empty": "Search across all data sources",
+      "empty": "Search data or run commands",
       "noResults": "No results",
       "navigate": "navigate",
       "select": "select",
@@ -551,7 +554,37 @@
       "fredKeyMissing": "FRED API key required — add it in Settings to enable economic indicators",
       "noOilDataRetry": "Oil data temporarily unavailable - will retry",
       "vsPreviousWeek": "vs previous week",
-      "in": "in"
+      "in": "in",
+      "centralBanks": "Central Banks",
+      "noBisData": "BIS data temporarily unavailable - will retry",
+      "policyRate": "Policy Rate",
+      "exchangeRate": "Exchange Rate",
+      "creditToGdp": "Credit / GDP",
+      "realEer": "Real EER",
+      "change": "Change",
+      "cut": "cut",
+      "hike": "hike",
+      "hold": "hold"
+    },
+    "tradePolicy": {
+      "restrictions": "Restrictions",
+      "tariffs": "Tariffs",
+      "flows": "Trade Flows",
+      "barriers": "Barriers",
+      "noRestrictions": "No active trade restrictions",
+      "noTariffData": "No tariff data available",
+      "noFlowData": "No trade flow data available",
+      "noBarriers": "No trade barriers reported",
+      "apiKeyMissing": "WTO API key required — add it in Settings",
+      "upstreamUnavailable": "WTO data temporarily unavailable — showing cached data",
+      "appliedRate": "Applied Rate",
+      "boundRate": "Bound Rate",
+      "exports": "Exports",
+      "imports": "Imports",
+      "yoyChange": "YoY Change",
+      "highTariff": "High",
+      "moderateTariff": "Moderate",
+      "lowTariff": "Low"
     },
     "gdelt": {
       "empty": "No recent articles for this topic"
@@ -778,7 +811,8 @@
         "financialCenters": "Financial Centers",
         "centralBanks": "Central Banks",
         "commodityHubs": "Commodity Hubs",
-        "gulfInvestments": "GCC Investments"
+        "gulfInvestments": "GCC Investments",
+        "tradeRoutes": "Trade Routes"
       },
       "tooltip": {
         "earthquake": "Earthquake",
@@ -879,7 +913,8 @@
           "techCyberThreats": "Cyber attacks and security events",
           "techEvents": "Major tech conferences and events",
           "techFires": "Active wildfires near tech infrastructure",
-          "financeGulfInvestments": "GCC sovereign wealth fund investments and FDI"
+          "financeGulfInvestments": "GCC sovereign wealth fund investments and FDI",
+          "tradeRoutes": "Major global shipping lanes connecting ports through strategic chokepoints"
         },
         "notes": {
           "timeAffects": "Affects: Earthquakes, Weather, Protests, Outages"
@@ -1053,6 +1088,34 @@
       "moreNotShown": "{{count}} more events not shown",
       "noEvents": "No events in this category",
       "infoTooltip": "<strong>UCDP Georeferenced Events</strong> Event-level conflict data from Uppsala University.<ul><li><strong>State-Based</strong>: Government vs rebel group</li><li><strong>Non-State</strong>: Armed group vs armed group</li><li><strong>One-Sided</strong>: Violence against civilians</li></ul>Deaths shown as best estimate (low-high range). ACLED duplicates are filtered out automatically."
+    },
+    "giving": {
+      "activityIndex": "Activity Index",
+      "trend": "Trend",
+      "estDailyFlow": "Est. Daily Flow",
+      "cryptoDaily": "Crypto Daily",
+      "tabs": {
+        "platforms": "Platforms",
+        "categories": "Categories",
+        "crypto": "Crypto",
+        "institutional": "Institutional"
+      },
+      "platform": "Platform",
+      "dailyVol": "Daily Vol.",
+      "velocity": "Velocity",
+      "freshness": "Data",
+      "category": "Category",
+      "share": "Share",
+      "trending": "TREND",
+      "dailyInflow": "24h Inflow",
+      "wallets": "Wallets",
+      "ofTotal": "% of Total",
+      "topReceivers": "Top Receivers",
+      "oecdOda": "OECD ODA",
+      "cafIndex": "CAF Index",
+      "candidGrants": "Candid Grants",
+      "dataLag": "Data Lag",
+      "infoTooltip": "<strong>Global Giving Activity Index</strong> Composite index tracking personal giving across crowdfunding platforms and crypto wallets.<ul><li><strong>Platforms</strong>: GoFundMe, GlobalGiving, JustGiving campaign sampling</li><li><strong>Crypto</strong>: On-chain charity wallet inflows (Endaoment, Giving Block)</li><li><strong>Institutional</strong>: OECD ODA, CAF World Giving Index, Candid grants</li></ul>Index is directional (not exact dollar amounts). Combines live sampling with published annual reports."
     },
     "displacement": {
       "noData": "No data",
@@ -1893,6 +1956,7 @@
     "calculatingExposure": "Calculating exposure",
     "computingSignals": "Computing signals...",
     "loadingEtfData": "Loading ETF data...",
+    "loadingGiving": "Loading global giving data",
     "loadingDisplacement": "Loading displacement data",
     "loadingClimateData": "Loading climate data",
     "failedTechReadiness": "Failed to load tech readiness data",

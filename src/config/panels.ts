@@ -32,6 +32,7 @@ const FULL_PANELS: Record<string, PanelConfig> = {
   commodities: { name: 'Commodities', enabled: true, priority: 1 },
   markets: { name: 'Markets', enabled: true, priority: 1 },
   economic: { name: 'Economic Indicators', enabled: true, priority: 1 },
+  'trade-policy': { name: 'Trade Policy', enabled: true, priority: 1 },
   finance: { name: 'Financial', enabled: true, priority: 1 },
   tech: { name: 'Technology', enabled: true, priority: 2 },
   crypto: { name: 'Crypto', enabled: true, priority: 2 },
@@ -44,6 +45,7 @@ const FULL_PANELS: Record<string, PanelConfig> = {
   'etf-flows': { name: 'BTC ETF Tracker', enabled: true, priority: 2 },
   stablecoins: { name: 'Stablecoins', enabled: true, priority: 2 },
   'ucdp-events': { name: 'UCDP Conflict Events', enabled: true, priority: 2 },
+  giving: { name: 'Global Giving', enabled: false, priority: 2 },
   displacement: { name: 'UNHCR Displacement', enabled: true, priority: 2 },
   climate: { name: 'Climate Anomalies', enabled: true, priority: 2 },
   'population-exposure': { name: 'Population Exposure', enabled: true, priority: 2 },
@@ -88,6 +90,13 @@ const FULL_MAP_LAYERS: MapLayers = {
   centralBanks: false,
   commodityHubs: false,
   gulfInvestments: false,
+  // Happy variant layers
+  positiveEvents: false,
+  kindness: false,
+  happiness: false,
+  speciesRecovery: false,
+  renewableInstallations: false,
+  tradeRoutes: false,
 };
 
 const FULL_MOBILE_MAP_LAYERS: MapLayers = {
@@ -129,6 +138,13 @@ const FULL_MOBILE_MAP_LAYERS: MapLayers = {
   centralBanks: false,
   commodityHubs: false,
   gulfInvestments: false,
+  // Happy variant layers
+  positiveEvents: false,
+  kindness: false,
+  happiness: false,
+  speciesRecovery: false,
+  renewableInstallations: false,
+  tradeRoutes: false,
 };
 
 // ============================================
@@ -210,6 +226,13 @@ const TECH_MAP_LAYERS: MapLayers = {
   centralBanks: false,
   commodityHubs: false,
   gulfInvestments: false,
+  // Happy variant layers
+  positiveEvents: false,
+  kindness: false,
+  happiness: false,
+  speciesRecovery: false,
+  renewableInstallations: false,
+  tradeRoutes: false,
 };
 
 const TECH_MOBILE_MAP_LAYERS: MapLayers = {
@@ -251,6 +274,13 @@ const TECH_MOBILE_MAP_LAYERS: MapLayers = {
   centralBanks: false,
   commodityHubs: false,
   gulfInvestments: false,
+  // Happy variant layers
+  positiveEvents: false,
+  kindness: false,
+  happiness: false,
+  speciesRecovery: false,
+  renewableInstallations: false,
+  tradeRoutes: false,
 };
 
 // ============================================
@@ -271,6 +301,7 @@ const FINANCE_PANELS: Record<string, PanelConfig> = {
   'crypto-news': { name: 'Crypto News', enabled: true, priority: 2 },
   centralbanks: { name: 'Central Bank Watch', enabled: true, priority: 1 },
   economic: { name: 'Economic Data', enabled: true, priority: 1 },
+  'trade-policy': { name: 'Trade Policy', enabled: true, priority: 1 },
   'economic-news': { name: 'Economic News', enabled: true, priority: 2 },
   ipo: { name: 'IPOs, Earnings & M&A', enabled: true, priority: 1 },
   heatmap: { name: 'Sector Heatmap', enabled: true, priority: 1 },
@@ -327,6 +358,13 @@ const FINANCE_MAP_LAYERS: MapLayers = {
   centralBanks: true,
   commodityHubs: false,
   gulfInvestments: false,
+  // Happy variant layers
+  positiveEvents: false,
+  kindness: false,
+  happiness: false,
+  speciesRecovery: false,
+  renewableInstallations: false,
+  tradeRoutes: true,
 };
 
 const FINANCE_MOBILE_MAP_LAYERS: MapLayers = {
@@ -368,14 +406,133 @@ const FINANCE_MOBILE_MAP_LAYERS: MapLayers = {
   centralBanks: true,
   commodityHubs: false,
   gulfInvestments: false,
+  // Happy variant layers
+  positiveEvents: false,
+  kindness: false,
+  happiness: false,
+  speciesRecovery: false,
+  renewableInstallations: false,
+  tradeRoutes: false,
+};
+
+// ============================================
+// HAPPY VARIANT (Good News & Progress)
+// ============================================
+const HAPPY_PANELS: Record<string, PanelConfig> = {
+  map: { name: 'World Map', enabled: true, priority: 1 },
+  'positive-feed': { name: 'Good News Feed', enabled: true, priority: 1 },
+  progress: { name: 'Human Progress', enabled: true, priority: 1 },
+  counters: { name: 'Live Counters', enabled: true, priority: 1 },
+  spotlight: { name: "Today's Hero", enabled: true, priority: 1 },
+  breakthroughs: { name: 'Breakthroughs', enabled: true, priority: 1 },
+  digest: { name: '5 Good Things', enabled: true, priority: 1 },
+  species: { name: 'Conservation Wins', enabled: true, priority: 1 },
+  renewable: { name: 'Renewable Energy', enabled: true, priority: 1 },
+  giving: { name: 'Global Giving', enabled: true, priority: 1 },
+};
+
+const HAPPY_MAP_LAYERS: MapLayers = {
+  conflicts: false,
+  bases: false,
+  cables: false,
+  pipelines: false,
+  hotspots: false,
+  ais: false,
+  nuclear: false,
+  irradiators: false,
+  sanctions: false,
+  weather: false,
+  economic: false,
+  waterways: false,
+  outages: false,
+  cyberThreats: false,
+  datacenters: false,
+  protests: false,
+  flights: false,
+  military: false,
+  natural: false,
+  spaceports: false,
+  minerals: false,
+  fires: false,
+  // Data source layers
+  ucdpEvents: false,
+  displacement: false,
+  climate: false,
+  // Tech layers (disabled)
+  startupHubs: false,
+  cloudRegions: false,
+  accelerators: false,
+  techHQs: false,
+  techEvents: false,
+  // Finance layers (disabled)
+  stockExchanges: false,
+  financialCenters: false,
+  centralBanks: false,
+  commodityHubs: false,
+  gulfInvestments: false,
+  // Happy variant layers
+  positiveEvents: true,
+  kindness: true,
+  happiness: true,
+  speciesRecovery: true,
+  renewableInstallations: true,
+  tradeRoutes: false,
+};
+
+const HAPPY_MOBILE_MAP_LAYERS: MapLayers = {
+  conflicts: false,
+  bases: false,
+  cables: false,
+  pipelines: false,
+  hotspots: false,
+  ais: false,
+  nuclear: false,
+  irradiators: false,
+  sanctions: false,
+  weather: false,
+  economic: false,
+  waterways: false,
+  outages: false,
+  cyberThreats: false,
+  datacenters: false,
+  protests: false,
+  flights: false,
+  military: false,
+  natural: false,
+  spaceports: false,
+  minerals: false,
+  fires: false,
+  // Data source layers
+  ucdpEvents: false,
+  displacement: false,
+  climate: false,
+  // Tech layers (disabled)
+  startupHubs: false,
+  cloudRegions: false,
+  accelerators: false,
+  techHQs: false,
+  techEvents: false,
+  // Finance layers (disabled)
+  stockExchanges: false,
+  financialCenters: false,
+  centralBanks: false,
+  commodityHubs: false,
+  gulfInvestments: false,
+  // Happy variant layers
+  positiveEvents: true,
+  kindness: true,
+  happiness: true,
+  speciesRecovery: true,
+  renewableInstallations: true,
+  tradeRoutes: false,
 };
 
 // ============================================
 // VARIANT-AWARE EXPORTS
 // ============================================
-export const DEFAULT_PANELS = SITE_VARIANT === 'tech' ? TECH_PANELS : SITE_VARIANT === 'finance' ? FINANCE_PANELS : FULL_PANELS;
-export const DEFAULT_MAP_LAYERS = SITE_VARIANT === 'tech' ? TECH_MAP_LAYERS : SITE_VARIANT === 'finance' ? FINANCE_MAP_LAYERS : FULL_MAP_LAYERS;
-export const MOBILE_DEFAULT_MAP_LAYERS = SITE_VARIANT === 'tech' ? TECH_MOBILE_MAP_LAYERS : SITE_VARIANT === 'finance' ? FINANCE_MOBILE_MAP_LAYERS : FULL_MOBILE_MAP_LAYERS;
+export const DEFAULT_PANELS = SITE_VARIANT === 'happy' ? HAPPY_PANELS : SITE_VARIANT === 'tech' ? TECH_PANELS : SITE_VARIANT === 'finance' ? FINANCE_PANELS : FULL_PANELS;
+export const DEFAULT_MAP_LAYERS = SITE_VARIANT === 'happy' ? HAPPY_MAP_LAYERS : SITE_VARIANT === 'tech' ? TECH_MAP_LAYERS : SITE_VARIANT === 'finance' ? FINANCE_MAP_LAYERS : FULL_MAP_LAYERS;
+export const MOBILE_DEFAULT_MAP_LAYERS = SITE_VARIANT === 'happy' ? HAPPY_MOBILE_MAP_LAYERS : SITE_VARIANT === 'tech' ? TECH_MOBILE_MAP_LAYERS : SITE_VARIANT === 'finance' ? FINANCE_MOBILE_MAP_LAYERS : FULL_MOBILE_MAP_LAYERS;
 
 /** Maps map-layer toggle keys to their data-freshness source IDs (single source of truth). */
 export const LAYER_TO_SOURCE: Partial<Record<keyof MapLayers, DataSourceId[]>> = {
@@ -418,7 +575,7 @@ export const PANEL_CATEGORY_MAP: Record<string, { labelKey: string; panelKeys: s
   },
   marketsFinance: {
     labelKey: 'header.panelCatMarketsFinance',
-    panelKeys: ['commodities', 'markets', 'economic', 'finance', 'polymarket', 'macro-signals', 'etf-flows', 'stablecoins', 'crypto', 'heatmap'],
+    panelKeys: ['commodities', 'markets', 'economic', 'trade-policy', 'finance', 'polymarket', 'macro-signals', 'etf-flows', 'stablecoins', 'crypto', 'heatmap'],
     variants: ['full'],
   },
   topical: {
@@ -477,7 +634,7 @@ export const PANEL_CATEGORY_MAP: Record<string, { labelKey: string; panelKeys: s
   },
   centralBanksEcon: {
     labelKey: 'header.panelCatCentralBanks',
-    panelKeys: ['centralbanks', 'economic', 'economic-news'],
+    panelKeys: ['centralbanks', 'economic', 'trade-policy', 'economic-news'],
     variants: ['finance'],
   },
   dealsInstitutional: {

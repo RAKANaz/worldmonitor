@@ -41,7 +41,7 @@ class AnalysisWorkerManager {
   private readyReject: ((error: Error) => void) | null = null;
   private readyTimeout: ReturnType<typeof setTimeout> | null = null;
 
-  private static readonly READY_TIMEOUT_MS = 10000; // 10 seconds to become ready
+  private static readonly READY_TIMEOUT_MS = 30000; // 30 seconds to become ready (Windows dev needs more time)
 
   /**
    * Initialize the worker. Called lazily on first use.
@@ -159,6 +159,9 @@ class AnalysisWorkerManager {
   private async waitForReady(): Promise<void> {
     this.initWorker();
     if (this.isReady) return;
+    if (!this.readyPromise) {
+      throw new Error('Worker initialization failed — reload the page to retry');
+    }
     await this.readyPromise;
   }
 
